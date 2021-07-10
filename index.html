@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crashtest</title>
+    <script>
+      var Module = {
+        onRuntimeInitialized: function() {
+          let p = new Module.Parent();
+          while(true)
+            c = p.child;
+        }
+      };
+    </script>
+    <script src="crashtest.js"></script>
+  </head>
+  <body>
+  
+  </body>
+</html>
